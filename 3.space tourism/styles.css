@@ -1,0 +1,55 @@
+body {
+    background-image: url('starter-code/assets/home/background-home-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: Garamond;
+  }
+
+h1{
+    font-size: 90px;
+}
+
+  
+/* Navigation bar*/
+#homeLine{
+    margin-left:25px ;
+}
+#navbarTogglerDemo01 {
+    backdrop-filter: blur(25px);
+    padding: 15px 45px 15px 25px;
+  }
+  
+
+.navbar{
+    margin: 40px;
+}
+
+.nav-item {
+    padding: 0 18px;
+    
+}
+
+
+
+/*content of home page*/
+.home{
+   color:white ;
+   padding-top: 8%;
+   padding-left: 10%;
+   width: 50%;
+   
+}
+.explore{
+    
+   position: absolute;
+   top: 50%;
+   left: 70%;
+}
+.circle{
+    position: relative;
+    bottom: 120px;
+    left: 30px;
+    font-size: 30px;
+}
+

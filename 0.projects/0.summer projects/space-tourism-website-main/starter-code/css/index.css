@@ -1,0 +1,559 @@
+/*------navbar------- */
+.navbar-nav{
+    padding: 1.5% 10% 1.5%;
+    backdrop-filter: blur(50px);
+    background-color: rgb(240, 248, 255,0.1);
+}
+.nav-link{
+    margin-left: 10px;
+}
+.navbar-brand{
+    padding: 20px;
+}
+/*------------------------------- screen larger than 1000px -------------------------------------------------*/
+@media (min-width:1000px) {
+    #home-section{
+        background-image: url("../assets/home/background-home-desktop.jpg");
+        height: 100vh;
+        background-size: cover;
+    }
+    .home-content{
+    width: 35%;
+    margin-left: 11%;
+}
+.home{
+    display: flex;
+    gap: 25%;
+    flex-wrap: wrap;
+    align-items: end;
+    height: 60vh;
+}
+#destination{
+    background-image: url("../assets/destination/background-destination-desktop.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+.home-content h1{
+    color: white;
+    font-size: 150px;
+}
+
+}
+/*------------------------------- screen in between 768px to 1000px -------------------------------------------------*/
+@media (min-width:768px) and (max-width:1000px){
+    #home-section{
+        background-image: url("../assets/home/background-home-tablet.jpg");
+        height: 100vh;
+        background-size: cover;
+    }
+    .home{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 15%;
+        gap: 100px;
+    }
+    .home-content{
+        width: 500px;
+        text-align: center;
+        align-self: center;
+        
+    }
+    .explore{
+        align-self: center;
+    }
+    .home-content h1{
+        color: white;
+        font-size: 150px;
+    }
+
+}
+/*------------------------------- screen in between 250px to 768px-------------------------------------------------*/
+@media (min-width:250px) and (max-width:768px){
+    #home-section{
+        background-image: url("../assets/home/background-home-mobile.jpg");
+        height: 100vh;
+        background-size: cover;
+    }
+    .home{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 15%;
+        gap: 80px;
+        
+        
+    }
+    .home-content{
+        text-align: center;
+        align-self: center;
+        width: 100%;
+    }
+    .explore{
+        align-self: center;
+    }
+    .home-content h1{
+        color: white;
+        font-size: 80px;
+    }
+    .home-content p{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+/*------ home page common css for all screens------- */
+
+.home-content h3,p{
+    color:#D0D6F9;
+}
+
+.explore{
+    
+    background-color: white;
+    border-radius: 100%;
+}
+.explore:hover{
+    outline: 30px solid rgb(175, 175, 175,0.6);
+    transition: 0.2s; 
+}
+.explore>a{
+    text-decoration: none;
+    color: black;
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----------*******************detination page****************---------*/
+@media (min-width:1000px){
+    #destination01{
+        background-image: url("../assets/destination/background-destination-desktop.jpg");
+        height: 100vh;
+        background-size: cover;
+    }
+    .destination-container{
+        position: absolute;
+        margin-top: 8%;
+        margin-left: 55%;
+        margin-right: 10%;
+    }
+    .planet-img{
+        position: absolute;
+        margin-top: 10%;
+        margin-left: 12%;
+        
+    }
+    .planet-txt>h1{
+        font-size: 100px;
+    }
+}
+/*------------------------------- screen in between 768px to 999px-------------------------------------------------*/
+@media (min-width:768px) and (max-width:999px){
+    #destination01{
+        background-image: url("../assets/destination/background-destination-tablet.jpg");
+        height: 100vh;
+        background-size: cover;
+    }
+    .destination-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 9%;
+    }
+    .destination-container{
+        width: 500px;
+        text-align: center;
+        margin-top: 5%;
+    }
+    .destination-tab{
+        display: flex;
+        justify-content: center;
+    }
+    .distance-time{
+        display: flex;
+        gap: 17%;
+        padding-top: 5%;
+        border-top: 1px solid rgb(141, 141, 141);
+        justify-content: center;
+    }
+    .planet-img>img{
+        width:380px;
+    }
+    .planet-txt>h1{
+        font-size: 100px;
+    }
+
+}
+/*------------------------------- screen in between 250px to 768px-------------------------------------------------*/
+@media (min-width:250px) and (max-width:768px){
+    #destination01{
+        background-image: url("../assets/destination/background-destination-mobile.jpg");
+        height: 100vh;
+        background-size: cover;
+    }
+    .destination-pick{
+        color: white;
+        text-align: center;
+        position: absolute;
+    }
+    .planet-img>img{
+        width: 450px;
+    }
+    .destination-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 9%;
+    }
+    .destination-container{
+        width: 350px;
+        text-align: center;
+        margin-top: 60%;
+        margin-left: 5%;
+        margin-right: 5%;
+        z-index: 1;
+        position: absolute;
+    }
+    .destination-tab{
+        display: flex;
+        justify-content: center;
+    }
+    .planet-txt>h1{
+        font-size: 80px;
+    }
+    
+    .distance-time{
+        display: flex;
+        gap: 17%;
+        padding-top: 5%;
+        border-top: 1px solid rgb(141, 141, 141);
+        justify-content: center;
+    }
+    
+}
+
+/*-------pick your destination----------*/
+.destination-pick{
+    color: white;
+    margin-top: 2%;
+    margin-left: 11%;
+    position: absolute;
+}
+/*------moon text --------------------*/
+.planet-txt{
+    color: white;
+    padding-top: 5%;
+}
+
+/*------distance and time-----------*/
+.distance-time{
+    display: flex;
+    gap: 17%;
+    padding-top: 5%;
+    border-top: 1px solid rgb(141, 141, 141);
+}
+
+
+
+/*------------------***************CREW PAGE***********-------------------------*/
+@media (min-width:1024px){
+    #crew02{
+        background-image: url("../assets/crew/background-crew-desktop.jpg");
+        background-size: cover;
+        height: 100vh;
+    }
+    .crew-img{
+        margin-top: 5%;
+    }
+    .crew-img>img{
+        width: 57vh;
+        height: 78vh;
+    }
+    .crew-flex{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .crew-content{
+        width: 500px;
+        margin-top: 15%;
+        margin-left: 10%;
+    }
+    .crew-content>p{
+        margin-right: 15%;
+    }
+    .crew-content>h4{
+        color:#747474;
+        font-size: 1.5rem;
+    }
+    .crew-content>h3{
+        color:white;
+        font-size: 3rem;
+        padding: 10px 10px 10px 0px;
+    }
+
+}
+/*------------------------------- screen in between 768px to 1024px-------------------------------------------------*/
+@media(min-width:768px) and (max-width:1024px){
+    #crew02{
+        background-image: url("../assets/crew/background-crew-desktop.jpg");
+        background-size: cover;
+        height: 100vh;
+    }
+    .crew-flex{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .crew-content{
+        width: 50vh;
+        justify-self: center;
+        text-align: center;
+        margin-top: 15%;
+    }
+    .crew-img{
+        margin-top: 10%;
+    }
+    .crew-img>img{
+        width:45vh;
+        height: 58vh;
+    }
+    .crew-content>p{
+        margin-right: 0px;
+    }
+    .crew-btn{
+        margin-left: 15vh;
+     }
+     .crew-content>h4{
+        color:#747474;
+        font-size: 1.5rem;
+    }
+    .crew-content>h3{
+        color:white;
+        font-size: 2.5rem;
+        padding: 10px 10px 10px 0px;
+    }
+    
+}
+/*------------------------------- screen in between 250px to 768px-------------------------------------------------*/
+@media(min-width:250px) and (max-width:768px){
+    #crew02{
+        background-image: url("../assets/crew/background-crew-desktop.jpg");
+        background-size: cover;
+        height: 100vh;
+    }
+    .crew-flex{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .crew-content{
+        width: 45vh;
+        justify-self: center;
+        text-align: center;
+        margin-top: 5%;
+        order: 1;
+    }
+    .crew-img{
+        margin-top: 10%;
+        
+    }
+    .crew-img>img{
+        width:35vh;
+        height: 50vh;
+    }
+    .crew-btn{
+       margin-left: 10%;
+    }
+    .crew-content>h4{
+        color:#747474;
+        font-size: 1.5rem;
+    }
+    .crew-content>h3{
+        color:white;
+        font-size: 2rem;
+        padding: 10px 10px 10px 0px;
+    }
+    
+}
+
+.crew-pick-txt{
+    color: white;  
+    margin-top: 2%;
+    margin-left: 10%;
+    position: absolute;
+}
+.crew-btn{
+    position: absolute;
+    margin-top: 2%;
+}
+.crew-btn>*{
+    border-radius: 100%;
+    border-style: none;
+    width: 20px;
+    height: 20px;
+    margin: 12px;
+    background-color: rgb(75, 75, 75);
+}
+.activeC{
+    background-color: white;
+}
+
+
+
+
+
+/*------------------***************Technology PAGE***********-------------------------*/
+
+
+.tech>button{
+    border-radius: 100%;
+    height: 80px;
+    width: 80px;
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.tech-content>h2{
+    font-size: 4rem;
+    color: white;
+    padding-bottom: 2%;
+}
+.tech-content>p{
+    width: 70%;
+}
+.tech-content>h4{
+    color: #D0D6F9;
+}
+
+.close-icon{
+    display: none;
+}
+
+@media(min-width:1024px){
+    #tech03{
+        background-image: url("../assets/technology/background-technology-desktop.jpg");
+        background-size: cover;
+        height: 100vh;
+    }
+    .tech-flex{
+        display: flex;
+        gap: 50px;
+    }
+    .tech{
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    .tech-content{
+        width: 35%;
+        margin-top: 10%;
+    }
+    .tech-img>img{
+        width: 60vh;
+        height: 70vh;
+        margin-top: 5%;
+
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px){
+    #tech03{
+        background-image: url("../assets/technology/background-technology-tablet.jpg");
+        background-size: cover;
+        height: 100vh;
+    }
+    .tech-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tech{
+        margin-top: 10%;
+        order: 1;
+        margin-bottom: 2vh;
+    }
+    .tech>button{
+        border-radius: 100%;
+        font-size: 1.5rem;
+        display: inline-block;
+        margin: 2vh;
+    }
+    .tech-content{
+        width: 60%;
+        text-align: center;
+        order: 2;
+    }
+    .tech-content>p{
+        width: 100%;
+    }
+    .tech-content>h2{
+        font-size: 3rem;
+        color: white;
+        padding-bottom: 2%;
+    }
+    .tech-img{
+        margin-top: 15%;
+    }
+    .tech-img>img{
+        height: 30vh;
+        width: 100%;
+    }
+}
+
+@media (min-width:300px) and (max-width:768px){
+    #tech03{
+        background-image: url("../assets/technology/background-technology-mobile.jpg");
+        background-size: cover;
+        height: 100vh;
+    }
+    .tech-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tech{
+        margin-top: 10%;
+        order: 1;
+        margin-bottom: 2vh;
+    }
+    .tech>button{
+        border-radius: 100%;
+        font-size: 1.5rem;
+        display: inline-block;
+        margin: 2vh;
+    }
+    .tech-content{
+        width: 80%;
+        text-align: center;
+        order: 2;
+    }
+    .tech-content>p{
+        width: 100%;
+    }
+    .tech-content>h2{
+        font-size: 2rem;
+        color: white;
+        padding-bottom: 2%;
+    }
+    .tech-img{
+        margin-top: 15%;
+    }
+    .tech-img>img{
+        height: 22vh;
+        width: 100%;
+    }
+}
+
+/*------------------***************technology PAGE***********-------------------------*/
+#technology-page{
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+    background-size: cover;
+    height: 100vh;
+}

@@ -1,0 +1,188 @@
+body {
+    font-family: "Montserrat";
+    
+}
+
+#title {
+    background-color: #ff4c68;
+    color: white;
+}
+.container {
+    padding: 3% 15% 12%;
+}
+
+
+
+h1 {
+    font-family: "Montserrat";
+    font-size: 3.5rem;
+    line-height: 1.5rem;
+}
+
+h2 {
+    font-family: "Montserrat";
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+/* Navigation bar*/
+
+.navbar{
+    margin: 40px;
+    
+}
+
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 6rem;
+}
+
+.row {
+    padding: 40px;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2 rem;
+    font-family: "Montserrat-light";
+}
+
+/*--------------------------- Downloads buttons--------------------*/
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+/*------------------------------title image------------------------*/
+.title-image {
+    position: absolute;
+    transform: rotate(30deg);
+    width: 25%;
+    
+    
+    
+}
+
+/*-------------------------------features----------------------------*/
+#features{
+    position:relative;
+    background-color: white;
+    padding: 7% 15%;
+    z-index: 1;
+    
+}
+
+.icon {
+    color: #ef8172;
+    font-size: 3rem;
+}
+.icon:hover {
+    color: #ff4c68;
+    font-size: 3rem;
+}
+
+/*------------------------------testimonials-----------------------------*/
+#testimonials {
+    position: relative;
+    text-align: center;
+    background-color:#ef8172 ;
+    color:#fff;
+    padding-top: 5%;
+    
+
+}
+.h1 {
+    font-family: "Montserrat";
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+.testimonials-image {
+    width: 15%;
+    border-radius: 100%;
+    margin: 2%;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+/*-----------------------------press------------------------*/
+#press {
+    background-color:#ef8172 ;
+    text-align: center;
+    padding: 3% ;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/*-- --------------------Pricing ----------------------------*/
+#pricing {
+    padding: 10%   ;
+    text-align: center;
+}
+
+    
+.pricing-column {
+    padding: 3% 2%;
+
+}
+.pricing-column:hover {
+    border: solid;
+    border-width: 2px;
+}
+
+
+
+/*------------responsive website-----------------------------*/
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+
+
+    .title-image {
+        position: static;
+        transform: rotate(0);
+        width: 50%;
+    }
+
+    .testimonials-image {
+        width: 20%;
+    }
+}
+
+/*---------------------cta section------------------------------*/
+ #cta {
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 12% 6% 6% 6%;
+    color: #fff;
+
+ }
+
+ .download-btn {
+    margin: 3% 1%;
+ }
+.app-icon {
+    margin-right:3px;
+}
+
+
+/*-------------------------footer-------------------------*/
+#footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 5% 0 1%;
+}
+h3 {
+    padding-bottom: 5%; 
+    margin:15%;
+}
+.f-icon {
+    margin:1%;
+    font-size:2rem;
+}

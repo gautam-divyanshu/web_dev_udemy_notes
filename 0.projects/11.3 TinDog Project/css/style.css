@@ -1,0 +1,91 @@
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+
+/*--------------------------TITLE---------------------*/
+.iphone{
+  padding-top: 5%;
+  margin-left: 60%;
+}
+.main-title{
+  position: relative;
+}
+.downloads{
+  position: absolute;
+  margin-left: 7%;
+  margin-right: 55%;
+  padding-top: 23%;
+}
+.downloads>h1{
+  font-weight: bold;
+  font-size: 3rem;
+}
+.downloads>div{
+  padding-top: 2%;
+}
+.downloads>div>button{
+  margin: 1%;
+  font-size: 1.1rem;
+}
+
+
+/*--------------------------features---------------------------*/
+.feature-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: .75rem;
+}
+
+
+/*----------------------------pricing----------------------------*/
+.pricing-container{
+  margin: 5%;
+}
+.pricing-heading{
+  text-align: center;
+}
+.pricing-heading>h1{
+  font-size: 3rem;  
+  font-weight: 600;
+}
+.pricing-heading>p{
+  font-size: 1.3rem;
+}
+.card-container{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.card{
+  text-align: center;
+  width: 23rem
+}
+
+/*----------------------------footer----------------------------*/
+

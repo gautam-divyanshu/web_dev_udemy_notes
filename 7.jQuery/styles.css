@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+}
+
+.big-title{
+    font-size: 10rem;
+    color: bisque;
+    font-style: italic;
+}
+
+.margin-50{
+    margin: 50px;
+}
+
+.search{
+    color: rgb(134, 175, 197);
+}
